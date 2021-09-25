@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HN-Shop</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./Assets/css/base.css">
+<link rel="stylesheet" href="./Assets/css/main.css">
+<link rel="stylesheet" href="./Assets/css/grid.css">
+<link rel="stylesheet" href="./Assets/css/responsive.css">
+<link rel="stylesheet" href="./Assets/fonts/icons-1.4.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Block element modifier -->
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+
+                <nav class="header__navbar hide-on-mobile-tablet ">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has--qr header__navbar-item--seperate">
+                            Vào cửa hàng HN-Sport
+
+                            <!-- Header QR -->
+                            <div class="header__QR">
+                                <img src="./Assets/img/Qr-code.png" alt="QR-code" class="header__qr-img">
+                                <div class="header__apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./Assets/img/google play.png" alt="google play" class="header__qr-apps">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./Assets/img/app store.png" alt="app store" class="header__qr-apps">
+                                    </a>
+                                   
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                           <span class="header__navbar-title--no-pointer">Kết nối</span> 
+                            <a href="https://www.facebook.com/" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list ">
+                        <li class="header__navbar-item header__navbar-item--has--notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="bi-bell"></i>Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--view">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./Assets/img/aoxanh.jpg"  class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">ÁO THUN NAM THỂ THAO ZATT01 (8 MÀU)
+                                                </span>
+                                                <span class="header__notify-des">- 100% Polyester cao cấp , không chứa thành phần Nilong. Vải nhập khẩu</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--view">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./Assets/img/aoden.jpg"  class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">ÁO THUN NAM THỂ THAO DI CHUYỂN</span>
+                                                <span class="header__notify-des">- Mềm nhẹ, co giãn tốt cực ký, thoáng khí, kháng khuẩn, nhanh khô, chống tia UV </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./Assets/img/aoxam.jpg" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">ÁO THUN NAM THỂ THAO TẬP LUYỆN</span>
+                                                <span class="header__notify-des"> 100% khách hàng hài lòng khi mua Áo thun thể thao nam chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer--btn">Xem tất cả </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="bi-question-circle"></i>Trợ giúp</a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--seperate">Đăng ký</li>
+                        <li class="header__navbar-item">Đăng Nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./Assets/img/ava.jpg" alt="" class="header__navbar-user-avatar">
+                            <span class="header__navbar-user-name">Hoàng Nam</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="#">Tài khoản của tôi</a>
+                                </li>  
+                                <li class="header__navbar-user-item">
+                                    <a href="#">Địa chỉ của tôi</a>
+                                </li>  
+                                <li class="header__navbar-user-item">
+                                    <a href="#">Đơn mua </a>
+                                </li>  
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="#">Đăng xuất </a>
+                                </li>  
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- header with search -->
+                <div class="header__with-search">
+                    <div class="header__logo  hide-on-tablet hide-on-mobile ">
+                        <a href="/" class="header__logo-link"><img src="https://iweb.tatthanh.com.vn/pic/3/blog/images/image(1284).png" class="img__logo"></a>
+                        <p class="text__logo">HN SPORT</p>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input--wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history--heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history--list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Áo Thun</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Áo Thể Thao</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>  
+
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Shop</span>
+                            <i class="header__search-select-icon bi-chevron-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option--item header__search-option--item-active">
+                                    <span>Mặt Hàng Trong Shop</span>
+                                    <i class="bi-check"></i>
+                                </li>
+                                <li class="header__search-option--item">
+                                    <span>Mặt Hàng Ngoài Shop</span>
+                                    <i class="bi-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon bi-search"></i>
+                        </button>
+                    </div>
+
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                                <i class="header__cart-icon bi-cart"></i>
+                            <span class="header__cart-notice">3</span>
+
+                                <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list ">
+                                <img src="https://1.bp.blogspot.com/-_uD7A_AZSb0/WlbVIY_aurI/AAAAAAAK0ww/5Zu3DwS9FxI8yXiCIBHej3U8DgqF7fp8ACLcBGAs/s1600/AS003536_08.gif" class="no-cart-img">
+                                <p class="header__cart-list--text">
+                                    Chưa có sản phẩm
+                                </p>
+
+                                 <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart item -->
+                                     <li class="header__cart-item">
+                                        <img src="./Assets/img/aoxanh.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Áo thun nam thể thao(8 màu)</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">300.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại: Áo thun
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/img/aoden.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Áo thun nam thể thao di chuyển</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">250.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại: Áo di chuyển
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/img/aoxam.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Áo thun nam thể thao tập luyện</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">200.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại: Áo tập luyện
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/img/aoxanh.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Áo thun nam thể thao(8 màu)</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">300.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại: Áo thun
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/img/aoden.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Áo thun nam thể thao di chuyển</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">250.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại: Áo di chuyển
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/img/aoxam.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Áo thun nam thể thao tập luyện</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">200.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại: Áo tập luyện
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/img/aoxanh.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Áo thun nam thể thao(8 màu)</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">300.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại: Áo thun
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/img/aoden.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Áo thun nam thể thao di chuyển</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">250.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại: Áo di chuyển
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./Assets/img/aoxam.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Áo thun nam thể thao tập luyện</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">200.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại: Áo tập luyện
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="header__cart-view-cart btn--btn-primary">Xem giỏ hàng</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item-active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá  
+                            <i class="header__sort-icon1 bi-chevron-up"></i>
+                            <i class="header__sort-icon2 bi-chevron-down"></i>        
+                    </a>
+               
+                </li>
+            </ul>
+        </header>
+        <div class="app__container">
+            
+            <!-- Test reponsive -->
+            <div class="grid wide">
+                <div class="grid__row ">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category hide-on-tablet hide-on-mobile">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon bi-list-ul"></i>
+                                Danh Mục
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category__item category__item-active">
+                                    <p class="category__item-text">Sản Phẩm </p>
+                                </li>
+                                <li class="category__item-hr ">
+                                    <a href="" class="category__item-link">Áo Thun</a>
+                                </li>
+                                <li class="category__item-hr">
+                                    <a href="" class="category__item-link">Áo Tập Luyện</a>
+                                </li>
+                                <li class="category__item-hr">
+                                    <a href="" class="category__item-link">Áo Di Chuyển</a>
+                                </li>
+                                <li class="category__item-hr">
+                                    <a href="" class="category__item-link">Áo Thiết Kế</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home__filter hide-on-mobile-tablet">
+                            <span class="home__filter-tiltle">Sắp xếp theo</span>
+                            <button class="home__filter-btn btn__shop">Phổ biến</button>
+                            <button class="home__filter-btn btn btn--btn-primary">Mới nhất</button>
+                            <button class="home__filter-btn btn__shop">Bán chạy</button>
+
+                            <div class="select__input">
+                                <span class="select__input-icon select__input-label">Giá</span>
+                                <i class="bi-chevron-down"></i>
+
+                                <!-- List option  -->
+                                <ul class="select__input-list">
+                                    <li class="select__input-item">
+                                        <a href="" class="select__input-link">Giá: Thấp đến Cao</a>
+                                    </li>
+                                    <li class="select__input-item">
+                                        <a href="" class="select__input-link">Giá: Cao đến Thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home__filter-page">
+                                <span class="home__filter-page--num">
+                                    <span class="home__filter-page--current">1</span>/6   
+                                </span>
+
+                                <div class="home__filter-page-controls">
+                                    <a href="" class="home__filter-page-btn home__filter-page-btn--disable">
+                                        <i class="home__filter-icon bi-chevron-left"></i>
+                                    </a>
+                                    <a href="" class="home__filter-page-btn">
+                                        <i class="home__filter-icon bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- mobile-categoty -->
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Mẫu áo thiết kế & đa dạng</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="home-product">
+                            <div class="grid__row no-gutters">
+                                <!-- Product-item  -->
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__product-item" href="#">
+                                         <img src="./Assets/img/aoxanh.jpg" class="home__product-item-img">
+                                         <h4 class="home__product-item-name">Áo Thun Nam Thể Thao Cổ Tròn Tay Ngắn Thời Trang Cao Cấp ZERO</h4>
+                                         <div class="home__product-item-price">
+                                             <span class="home__product-item-price-old">340.000đ</span>
+                                             <span class="home__product-item-price-current">300.000đ</span>
+                                         </div>
+                                         <div class="home__product-item-action">
+                                             <span class="home__product-item-like home__product-item-like-has-like">
+                                                <i class="home__product-item-like-icon-empty bi-heart"></i>
+                                                <i class="home__product-item-like-icon-fill bi-heart-fill"></i>
+                                             </span>
+                                             <div class="home__product-item-rating">
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                             </div>
+                                             <span class="home__product-item-sold">30 Đã bán</span>
+                                         </div>
+                                         <div class="home__product-item-origin">
+                                             <span class="home__product-item-brand">Whoo</span>
+                                             <span class="home__product-item-name">Hàn Quốc</span>
+                                         </div>
+                                         <div class="home__product-item-favourite">
+                                            <i class="bi-check"></i>
+                                            Yêu thích
+                                         </div>
+                                         <div class="home__product-item-sale-off">
+                                             <span class="home__product-item-sale-off--percent">5%</span>
+                                             <span class="home__product-item-sale-off--label">GIẢM</span>
+                                         </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__product-item" href="#">
+                                         <img src="./Assets/img/aoden.jpg" class="home__product-item-img">
+                                         <h4 class="home__product-item-name">Áo Thun Thể Thao Nam MT11908</h4>
+                                         <div class="home__product-item-price">
+                                             <span class="home__product-item-price-old">350.000đ</span>
+                                             <span class="home__product-item-price-current">250.000đ</span>
+                                         </div>
+                                         <div class="home__product-item-action">
+                                             <span class="home__product-item-like home__product-item-like-has-like">
+                                                <i class="home__product-item-like-icon-empty bi-heart"></i>
+                                                <i class="home__product-item-like-icon-fill bi-heart-fill"></i>
+                                             </span>
+                                             <div class="home__product-item-rating">
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                             </div>
+                                             <span class="home__product-item-sold">20 Đã bán</span>
+                                         </div>
+                                         <div class="home__product-item-origin">
+                                             <span class="home__product-item-brand">Whoo</span>
+                                             <span class="home__product-item-name">Mỹ</span>
+                                         </div>
+                                         <div class="home__product-item-favourite">
+                                            <i class="bi-check"></i>
+                                            Yêu thích
+                                         </div>
+                                         <div class="home__product-item-sale-off">
+                                             <span class="home__product-item-sale-off--percent">14%</span>
+                                             <span class="home__product-item-sale-off--label">GIẢM</span>
+                                         </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__product-item" href="#">
+                                         <img src="./Assets/img/aoxam.jpg" class="home__product-item-img">
+                                         <h4 class="home__product-item-name">Áo Thun Thể Thao Nam Đẹp Cao Cấp, Áo Phông Nam Cổ Tròn tay ngắn thể thao thời trang nam</h4>
+                                         <div class="home__product-item-price">
+                                             <span class="home__product-item-price-old">380.000đ</span>
+                                             <span class="home__product-item-price-current">200.000đ</span>
+                                         </div>
+                                         <div class="home__product-item-action">
+                                             <span class="home__product-item-like home__product-item-like-has-like">
+                                                <i class="home__product-item-like-icon-empty bi-heart"></i>
+                                                <i class="home__product-item-like-icon-fill bi-heart-fill"></i>
+                                             </span>
+                                             <div class="home__product-item-rating">
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                             </div>
+                                             <span class="home__product-item-sold">10 Đã bán</span>
+                                         </div>
+                                         <div class="home__product-item-origin">
+                                             <span class="home__product-item-brand">Whoo</span>
+                                             <span class="home__product-item-name">Việt Nam</span>
+                                         </div>
+                                         <div class="home__product-item-favourite">
+                                            <i class="bi-check"></i>
+                                            Yêu thích
+                                         </div>
+                                         <div class="home__product-item-sale-off">
+                                             <span class="home__product-item-sale-off--percent">16%</span>
+                                             <span class="home__product-item-sale-off--label">GIẢM</span>
+                                         </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__product-item" href="#">
+                                         <img src="./Assets/img/mau4-3.jpg" class="home__product-item-img">
+                                         <h4 class="home__product-item-name">ÁO THỂ THAO NAM DUNLOP - DABAS9059-1C-GM (Cam nhạt)</h4>
+                                         <div class="home__product-item-price">
+                                             <span class="home__product-item-price-old">420.000đ</span>
+                                             <span class="home__product-item-price-current">310.000đ</span>
+                                         </div>
+                                         <div class="home__product-item-action">
+                                             <span class="home__product-item-like home__product-item-like-has-like">
+                                                <i class="home__product-item-like-icon-empty bi-heart"></i>
+                                                <i class="home__product-item-like-icon-fill bi-heart-fill"></i>
+                                             </span>
+                                             <div class="home__product-item-rating">
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                             </div>
+                                             <span class="home__product-item-sold">11 Đã bán</span>
+                                         </div>
+                                         <div class="home__product-item-origin">
+                                             <span class="home__product-item-brand">Whoo</span>
+                                             <span class="home__product-item-name">Nhật Bản</span>
+                                         </div>
+                                         <div class="home__product-item-favourite">
+                                            <i class="bi-check"></i>
+                                            Yêu thích
+                                         </div>
+                                         <div class="home__product-item-sale-off">
+                                             <span class="home__product-item-sale-off--percent">12%</span>
+                                             <span class="home__product-item-sale-off--label">GIẢM</span>
+                                         </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__product-item" href="#">
+                                         <img src="./Assets/img/mau5.jpg" class="home__product-item-img">
+                                         <h4 class="home__product-item-name">ÁO THỂ THAO NAM DUNLOP - DABAS9058-1C-WT (TRẮNG)</h4>
+                                         <div class="home__product-item-price">
+                                             <span class="home__product-item-price-old">315.000đ</span>
+                                             <span class="home__product-item-price-current">250.000đ</span>
+                                         </div>
+                                         <div class="home__product-item-action">
+                                             <span class="home__product-item-like home__product-item-like-has-like">
+                                                <i class="home__product-item-like-icon-empty bi-heart"></i>
+                                                <i class="home__product-item-like-icon-fill bi-heart-fill"></i>
+                                             </span>
+                                             <div class="home__product-item-rating">
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                             </div>
+                                             <span class="home__product-item-sold">7 Đã bán</span>
+                                         </div>
+                                         <div class="home__product-item-origin">
+                                             <span class="home__product-item-brand">Whoo</span>
+                                             <span class="home__product-item-name">Nhật Bản</span>
+                                         </div>
+                                         <div class="home__product-item-favourite">
+                                            <i class="bi-check"></i>
+                                            Yêu thích
+                                         </div>
+                                         <div class="home__product-item-sale-off">
+                                             <span class="home__product-item-sale-off--percent">11%</span>
+                                             <span class="home__product-item-sale-off--label">GIẢM</span>
+                                         </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__product-item" href="#">
+                                         <img src="./Assets/img/tk01.jpg" class="home__product-item-img">
+                                         <h4 class="home__product-item-name">Mẫu Áo Đấu Câu lạc bộ tự thiết kế họa tiết màu xanh nhạt đẹp V2045</h4>
+                                         <div class="home__product-item-price">
+                                             <span class="home__product-item-price-old">240.000đ</span>
+                                             <span class="home__product-item-price-current">149.000đ</span>
+                                         </div>
+                                         <div class="home__product-item-action">
+                                             <span class="home__product-item-like home__product-item-like-has-like">
+                                                <i class="home__product-item-like-icon-empty bi-heart"></i>
+                                                <i class="home__product-item-like-icon-fill bi-heart-fill"></i>
+                                             </span>
+                                             <div class="home__product-item-rating">
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                             </div>
+                                             <span class="home__product-item-sold">15 Đã bán</span>
+                                         </div>
+                                         <div class="home__product-item-origin">
+                                             <span class="home__product-item-brand">Whoo</span>
+                                             <span class="home__product-item-name">Úc</span>
+                                         </div>
+                                         <div class="home__product-item-favourite">
+                                            <i class="bi-check"></i>
+                                            Yêu thích
+                                         </div>
+                                         <div class="home__product-item-sale-off">
+                                             <span class="home__product-item-sale-off--percent">25%</span>
+                                             <span class="home__product-item-sale-off--label">GIẢM</span>
+                                         </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__product-item" href="#">
+                                         <img src="./Assets/img/tk02.jpg" class="home__product-item-img">
+                                         <h4 class="home__product-item-name">Mẫu áo đấu Câu lạc bộ tự thiết kế họa tiết màu trắng kết hợp xanh đẹp V2045</h4>
+                                         <div class="home__product-item-price">
+                                             <span class="home__product-item-price-old">200.000đ</span>
+                                             <span class="home__product-item-price-current">100.000đ</span>
+                                         </div>
+                                         <div class="home__product-item-action">
+                                             <span class="home__product-item-like home__product-item-like-has-like">
+                                                <i class="home__product-item-like-icon-empty bi-heart"></i>
+                                                <i class="home__product-item-like-icon-fill bi-heart-fill"></i>
+                                             </span>
+                                             <div class="home__product-item-rating">
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                             </div>
+                                             <span class="home__product-item-sold">19 Đã bán</span>
+                                         </div>
+                                         <div class="home__product-item-origin">
+                                             <span class="home__product-item-brand">Whoo</span>
+                                             <span class="home__product-item-name">Tây Ban Nha</span>
+                                         </div>
+                                         <div class="home__product-item-favourite">
+                                            <i class="bi-check"></i>
+                                            Yêu thích
+                                         </div>
+                                         <div class="home__product-item-sale-off">
+                                             <span class="home__product-item-sale-off--percent">50%</span>
+                                             <span class="home__product-item-sale-off--label">GIẢM</span>
+                                         </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__product-item" href="#">
+                                         <img src="./Assets/img/tk04.jpg" class="home__product-item-img">
+                                         <h4 class="home__product-item-name">Mẫu áo đấu Câu lạc bộ tự thiết kế họa tiết màu đen đỏ đẹp V2045</h4>
+                                         <div class="home__product-item-price">
+                                             <span class="home__product-item-price-old">150.000đ</span>
+                                             <span class="home__product-item-price-current">120.000đ</span>
+                                         </div>
+                                         <div class="home__product-item-action">
+                                             <span class="home__product-item-like home__product-item-like-has-like">
+                                                <i class="home__product-item-like-icon-empty bi-heart"></i>
+                                                <i class="home__product-item-like-icon-fill bi-heart-fill"></i>
+                                             </span>
+                                             <div class="home__product-item-rating">
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                             </div>
+                                             <span class="home__product-item-sold">6 Đã bán</span>
+                                         </div>
+                                         <div class="home__product-item-origin">
+                                             <span class="home__product-item-brand">Whoo</span>
+                                             <span class="home__product-item-name">Hà Lan</span>
+                                         </div>
+                                         <div class="home__product-item-favourite">
+                                            <i class="bi-check"></i>
+                                            Yêu thích
+                                         </div>
+                                         <div class="home__product-item-sale-off">
+                                             <span class="home__product-item-sale-off--percent">7%</span>
+                                             <span class="home__product-item-sale-off--label">GIẢM</span>
+                                         </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__product-item" href="#">
+                                         <img src="./Assets/img/tk03.jpg" class="home__product-item-img">
+                                         <h4 class="home__product-item-name">Mẫu Áo Thiết Kế Thời Trang Cao Cấp Có Cổ Màu Đen với màu trắng ZERO</h4>
+                                         <div class="home__product-item-price">
+                                             <span class="home__product-item-price-old">180.000đ</span>
+                                             <span class="home__product-item-price-current">160.000đ</span>
+                                         </div>
+                                         <div class="home__product-item-action">
+                                             <span class="home__product-item-like home__product-item-like-has-like">
+                                                <i class="home__product-item-like-icon-empty bi-heart"></i>
+                                                <i class="home__product-item-like-icon-fill bi-heart-fill"></i>
+                                             </span>
+                                             <div class="home__product-item-rating">
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                             </div>
+                                             <span class="home__product-item-sold">13 Đã bán</span>
+                                         </div>
+                                         <div class="home__product-item-origin">
+                                             <span class="home__product-item-brand">Whoo</span>
+                                             <span class="home__product-item-name">Đức</span>
+                                         </div>
+                                         <div class="home__product-item-favourite">
+                                            <i class="bi-check"></i>
+                                            Yêu thích
+                                         </div>
+                                         <div class="home__product-item-sale-off">
+                                             <span class="home__product-item-sale-off--percent">9%</span>
+                                             <span class="home__product-item-sale-off--label">GIẢM</span>
+                                         </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home__product-item" href="#">
+                                         <img src="./Assets/img/mau4-2.jpg" class="home__product-item-img">
+                                         <h4 class="home__product-item-name">Mẫu áo Tự Thiết Kế họa tiết màu tím kết hợp màu cam nhạt đẹp V2045</h4>
+                                         <div class="home__product-item-price">
+                                             <span class="home__product-item-price-old">220.000đ</span>
+                                             <span class="home__product-item-price-current">190.000đ</span>
+                                         </div>
+                                         <div class="home__product-item-action">
+                                             <span class="home__product-item-like home__product-item-like-has-like">
+                                                <i class="home__product-item-like-icon-empty bi-heart"></i>
+                                                <i class="home__product-item-like-icon-fill bi-heart-fill"></i>
+                                             </span>
+                                             <div class="home__product-item-rating">
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="home__product-item-gold bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                             </div>
+                                             <span class="home__product-item-sold">14 Đã bán</span>
+                                         </div>
+                                         <div class="home__product-item-origin">
+                                             <span class="home__product-item-brand">Whoo</span>
+                                             <span class="home__product-item-name">Anh</span>
+                                         </div>
+                                         <div class="home__product-item-favourite">
+                                            <i class="bi-check"></i>
+                                            Yêu thích
+                                         </div>
+                                         <div class="home__product-item-sale-off">
+                                             <span class="home__product-item-sale-off--percent">13%</span>
+                                             <span class="home__product-item-sale-off--label">GIẢM</span>
+                                         </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    <i class="pagination__item-icon bi-chevron-left"></i>
+                                </a>
+                            </li>
+
+                            <li class="pagination__item pagination__item-active">
+                                <a href="" class="pagination__item-link">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">...</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">6</a>
+                            </li>
+
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item-link">
+                                    <i class="pagination__item-icon bi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide footer__content">
+                <div class="grid__row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__list-item"> 
+                                <a href="" class="footer__list-item-link">HN SPORT Mail</a>
+                            </li>
+                            <li class="footer__list-item"> 
+                                <a href="" class="footer__list-item-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Giới thiệu về HN SPORT</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Điều Khoản</a>
+                            </li>  
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Thông tin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <h3 class="footer__heading">Địa Chỉ</h3>
+                        <p class="footer__heading-text">12 Trịnh Đình Thảo, Tân Phú, TP.HCM</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4775762803324!2d106.63214015008894!3d10.774687292285062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea168a65c0b%3A0x2a4a7dc43e177de1!2zMTIgVHLhu4tuaCDEkMOsbmggVGjhuqNvLCBIb8OgIFRoYW5oLCBUw6JuIFBow7osIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1628495684570!5m2!1svi!2s" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" class="img__footer"></iframe>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="https://www.facebook.com/" class="footer__list-item-link">
+                                    <i class="footer__list-item-icon bi-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="https://www.google.com/?client=safari" class="footer__list-item-link">
+                                    <i class="footer__list-item-icon bi-google"></i>
+                                    Google
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="https://www.instagram.com/" class="footer__list-item-link">
+                                    <i class="footer__list-item-icon bi-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-6">
+                        <h3 class="footer__heading">Vào của hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./Assets/img/Qr-code.png" alt="Download QR" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__img-link">
+                                    <img src="./Assets/img/google play.png" alt="Google play" class="footer__img">
+                                </a>
+                                <a href="" class="footer__img-link">
+                                    <img src="./Assets/img/app store.png" alt="App store" class="footer__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text">&copy 2021 - Bản quyền thuộc về HN SPORT</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Lớp phủ bên ngoài -->
+     <!-- <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">  -->
+            <!-- register form -->
+            <!-- <div class="auth__form">
+                <div class="auth__form-container">
+                    <div class="auth__form-header">
+                        <h3 class="auth__form-heading">Đăng Ký </h3>
+                        <span class="auth__form-switch-btn">Đăng Nhập</span>
+                    </div>
+                    <div class="auth__form-form">
+                        <div class="auth__form-group">
+                            <input type="text" class="auth__form-input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth__form-group">
+                            <input type="password" class="auth__form-input" placeholder="Nhập mật khẩu của bạn">
+                        </div>
+                        <div class="auth__form-group">
+                            <input type="password" class="auth__form-input" placeholder="Nhập lại mật khẩu ">
+                        </div>
+                    </div>
+                    <div class="auth__form-aside">
+                        <p class="auth__form-policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với HN-shop về 
+                            <a href="" class="auth__form-text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth__form-text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth__form-controls">
+                        <button class="btn auth__form-controls-back">TRỞ LẠI</button>
+                        <button class="btn--btn-primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                <div class="auth__form-social">
+                    <a href="" class="btn--btn-with-icons btn-size-s">
+                        <i class="bi-facebook"></i>
+                       <span class="auth__form-social--fb">Kết nối với facebook</span> 
+                    </a>
+                    <a href="" class="btn--btn-with-icons btn-size-m">
+                       <img src="https://yt3.ggpht.com/ytc/AKedOLQewDiyDHyBbV2N23wQuVH0dK0Dj0hMZwQQvIxF6w=s900-c-k-c0x00ffffff-no-rj" class="img__gg">
+                       <span class="auth__form-social--gg"> Kết nối với Google</span> 
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- login form -->
+             <!-- <div class="auth__form">
+                <div class="auth__form-container">
+                    <div class="auth__form-header">
+                        <h3 class="auth__form-heading">Đăng Nhập </h3>
+                        <span class="auth__form-switch-btn">Đăng ký</span>
+                    </div>
+                    <div class="auth__form-form">
+                        <div class="auth__form-group">
+                            <input type="text" class="auth__form-input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth__form-group">
+                            <input type="password" class="auth__form-input" placeholder="Nhập mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="auth__form-aside">
+                        <div class="auth__form-help">
+                            <a href="" class="auth__form-help-link auth__form-help--forget">Quên mật khẩu</a>
+                            <span class="auth__form-help--seperate"></span>
+                            <a href="" class="auth__form-help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+                    <div class="auth__form-controls">
+                        <button class="btn auth__form-controls-back">TRỞ LẠI</button>
+                        <button class="btn--btn-primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                <div class="auth__form-social">
+                    <a href="" class="btn--btn-with-icons btn-size-s">
+                        <i class="bi-facebook"></i>
+                       <span class="auth__form-social--fb">Kết nối với facebook</span> 
+                    </a>
+                    <a href="" class="btn--btn-with-icons btn-size-m">
+                       <img src="https://yt3.ggpht.com/ytc/AKedOLQewDiyDHyBbV2N23wQuVH0dK0Dj0hMZwQQvIxF6w=s900-c-k-c0x00ffffff-no-rj" class="img__gg">
+                       <span class="auth__form-social--gg"> Kết nối với Google</span> 
+                    </a>
+                </div>
+            </div>
+        </div>
+      </div>  -->
+</body>
+</html>
